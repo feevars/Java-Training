@@ -1,0 +1,11 @@
+
+
+
+public interface TestInterface1 {
+
+	default void show() {
+		"TestInterface1".subSequence(3, 9);
+		System.out.println("Default TestInterface1");
+	}
+	
+}

@@ -8,9 +8,8 @@ public class TestClass implements TestInterface1, TestInterface2 {
 	}
 	
 	public static void main(String[] args) {
-		
 		String charac = new String("Pauta");
-		System.out.println(TestInterface1.compare(charac));
+		charac.compareTo("caracteres"); 
 		
 		TestClass t = new TestClass();
 		t.show();
