@@ -1,0 +1,18 @@
+
+
+public class TestMainClass implements TestInterface1 {
+
+	@Override
+	public void square(int a) {
+		System.out.println(a*a);
+	}
+	
+	public static void main(String[] args) {
+		TestMainClass d = new TestMainClass();
+		d.square(4);
+		
+		d.show();
+		
+	}
+
+}

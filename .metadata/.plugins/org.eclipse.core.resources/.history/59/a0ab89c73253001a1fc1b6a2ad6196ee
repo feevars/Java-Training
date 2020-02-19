@@ -1,0 +1,12 @@
+
+
+
+public interface TestInterface2 {
+
+	public void square (int a);
+	
+	default void show() {
+		System.out.println("Default method executed");
+	}
+	
+}

@@ -1,0 +1,13 @@
+
+
+public class TestMainClass implements TestInterface1, TestInterface2 {
+
+	public static void main(String[] args) {
+		TestMainClass d = new TestMainClass();
+		d.square(4);
+		
+		d.show();
+		
+	}
+
+}
