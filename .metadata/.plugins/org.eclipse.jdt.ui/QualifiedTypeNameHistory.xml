@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="entities.IAceleracao"/>
-    <fullyQualifiedTypeName name="entities.TestInterface"/>
-    <fullyQualifiedTypeName name="TestMainClass"/>
-    <fullyQualifiedTypeName name="TestClass"/>
-    <fullyQualifiedTypeName name="TestInterface1"/>
-    <fullyQualifiedTypeName name="TestInterface2"/>
+<fullyQualifiedTypeName name="entities.IAceleracao"/>
+<fullyQualifiedTypeName name="entities.TestInterface"/>
+<fullyQualifiedTypeName name="TestMainClass"/>
+<fullyQualifiedTypeName name="TestClass"/>
+<fullyQualifiedTypeName name="TestInterface1"/>
+<fullyQualifiedTypeName name="TestInterface2"/>
 </qualifiedTypeNameHistroy>
