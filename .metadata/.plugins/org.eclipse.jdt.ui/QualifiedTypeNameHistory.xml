@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="entities.IAceleracao"/>
-<fullyQualifiedTypeName name="entities.TestInterface"/>
-<fullyQualifiedTypeName name="TestMainClass"/>
-<fullyQualifiedTypeName name="TestClass"/>
-<fullyQualifiedTypeName name="TestInterface1"/>
-<fullyQualifiedTypeName name="TestInterface2"/>
+    <fullyQualifiedTypeName name="entities.IAceleracao"/>
+    <fullyQualifiedTypeName name="entities.TestInterface"/>
+    <fullyQualifiedTypeName name="TestMainClass"/>
+    <fullyQualifiedTypeName name="TestClass"/>
+    <fullyQualifiedTypeName name="TestInterface1"/>
+    <fullyQualifiedTypeName name="TestInterface2"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="entities.PropertyOwner"/>
+    <fullyQualifiedTypeName name="entities.Rommie"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
