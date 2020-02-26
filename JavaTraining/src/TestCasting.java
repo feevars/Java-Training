@@ -23,6 +23,9 @@ public class TestCasting {
 		Integer k = j;
 		String h = k.toString();
 		
+		int numero = 300;
+		System.out.println(Integer.toString(numero));
+		
 
 	}
 
