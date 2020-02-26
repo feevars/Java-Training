@@ -26,7 +26,9 @@ public class TestCasting {
 		int numero = 300;
 		System.out.println(Integer.toString(numero));
 		
-
+		String num = "246";
+		System.out.println(Integer.parseInt(num));
+		
 	}
 
 }
