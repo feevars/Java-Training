@@ -1,65 +1,86 @@
 package entities;
 
-import java.io.Serializable;
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Rommie implements Serializable {
-	
-	private static final long serialVersionUID = 1L;
+public class Property {
 	
 	private Integer id;
 	private String name;
-	private String telephone;
 	private String email;
-	private Date birthDate;
 	
-	//private Room room;
-	//private Address address;
+	private Adress adress;
+	private PropertyOwner propertyOwner;
+	private ArrayList<Rommie> rommie;
+	private ArrayList<Room> rooms;
 	
-	
-	public Rommie () {
+	public Property() {
 		
 	}
 	
-	public Rommie(Integer id, String name, String telephone, String email, Date birthDate) {
+	public Property(Integer id, String name, String email, Adress adress) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.telephone = telephone;
 		this.email = email;
-		this.birthDate = birthDate;
+		this.adress = adress;
 	}
+
 	public Integer getId() {
 		return id;
 	}
+
 	public void setId(Integer id) {
 		this.id = id;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getTelephone() {
-		return telephone;
-	}
-	public void setTelephone(String telephone) {
-		this.telephone = telephone;
-	}
+
 	public String getEmail() {
 		return email;
 	}
+
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public Date getBirthDate() {
-		return birthDate;
+
+	public Adress getAdress() {
+		return adress;
 	}
-	public void setBirthDate(Date birthDate) {
-		this.birthDate = birthDate;
+
+	public void setAdress(Adress adress) {
+		this.adress = adress;
 	}
-	
+
+	public PropertyOwner getPropertyOwner() {
+		return propertyOwner;
+	}
+
+	public void setPropertyOwner(PropertyOwner propertyOwner) {
+		this.propertyOwner = propertyOwner;
+	}
+
+	public ArrayList<Rommie> getRommie() {
+		return rommie;
+	}
+
+	public void setRommie(ArrayList<Rommie> rommie) {
+		this.rommie = rommie;
+	}
+
+	public List<Room> getRooms() {
+		return rooms;
+	}
+
+	public void setRooms(ArrayList<Room> rooms) {
+		this.rooms = rooms;
+	}
 
 	@Override
 	public int hashCode() {
@@ -77,7 +98,7 @@ public class Rommie implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Rommie other = (Rommie) obj;
+		Property other = (Property) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
@@ -85,6 +106,7 @@ public class Rommie implements Serializable {
 			return false;
 		return true;
 	}
-
+	
+	
 	
 }

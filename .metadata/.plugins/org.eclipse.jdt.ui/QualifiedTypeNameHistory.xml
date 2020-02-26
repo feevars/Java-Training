@@ -6,4 +6,9 @@
 <fullyQualifiedTypeName name="TestClass"/>
 <fullyQualifiedTypeName name="TestInterface1"/>
 <fullyQualifiedTypeName name="TestInterface2"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="entities.PropertyOwner"/>
+<fullyQualifiedTypeName name="entities.Rommie"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
