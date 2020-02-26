@@ -1,3 +1,4 @@
+package exercicios;
 
 public interface TestInterface1 {
 

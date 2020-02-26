@@ -1,3 +1,4 @@
+package exercicios;
 
 
 public class TestClass implements TestInterface1, TestInterface2 {
