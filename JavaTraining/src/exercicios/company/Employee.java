@@ -1,12 +1,15 @@
 package exercicios.company;
 
-public class Employee {
+public abstract class Employee {
 	
 	private String nome;
 	private Character sexo;
 	private String email;
 	private Integer age;
+	private Double salario;
 	private Double bonification;
+	private Integer yearsWorking;
+	private Enum<Level> level;
 	
 	public Employee(String nome, Character sexo, String email) {
 		this.nome = nome;
@@ -19,6 +22,17 @@ public class Employee {
 		this.sexo = sexo;
 		this.email = email;
 		this.age = age;
+	}
+	
+	public Employee(String nome, Character sexo, String email, Integer age, Double salario, Double bonification,
+			Integer yearsWorking) {
+		this.nome = nome;
+		this.sexo = sexo;
+		this.email = email;
+		this.age = age;
+		this.salario = salario;
+		this.bonification = bonification;
+		this.yearsWorking = yearsWorking;
 	}
 
 	public String getNome() {
@@ -59,6 +73,30 @@ public class Employee {
 
 	public void setBonification(Double bonification) {
 		this.bonification = bonification;
+	}
+
+	public Double getSalario() {
+		return salario;
+	}
+
+	public void setSalario(Double salario) {
+		this.salario = salario;
+	}
+
+	public Integer getYearsWorking() {
+		return yearsWorking;
+	}
+
+	public void setYearsWorking(Integer yearsWorking) {
+		this.yearsWorking = yearsWorking;
+	}
+
+	public Enum<Level> getLevel() {
+		return level;
+	}
+
+	public void setLevel(Enum<Level> level) {
+		this.level = level;
 	}
 	
 	

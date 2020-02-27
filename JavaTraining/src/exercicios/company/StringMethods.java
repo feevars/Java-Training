@@ -3,8 +3,8 @@ package exercicios.company;
 public class StringMethods {
 	public static void main(String[] args) {
 
-		Employee emp1 = new Employee("Roger", 'M', "roger@gmail.com");
-		Employee emp2 = new Employee("Carla", 'F', "carla@gmail.com");
+		Employee emp1 = new Programmer("Roger", 'M', "roger@gmail.com", "Java");
+		Employee emp2 = new Tester("Carla", 'F', "carla@gmail.com", "JUnit");
 
 		String s = new String("Boa tarde, X");
 

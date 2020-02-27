@@ -3,8 +3,8 @@ package exercicios.company;
 public class Conditional {
 	public static void main(String[] args) {
 		
-		Employee emp1 = new Employee("Roger", 'M', "roger@gmail.com", 24);
-		Employee emp2 = new Employee("Carla", 'F', "carla@gmail.com", 33);
+		Employee emp1 = new Programmer("Roger", 'M', "roger@gmail.com", 24, "Java");
+		Employee emp2 = new Tester("Carla", 'F', "carla@gmail.com", 33, "JUnit");
 		
 		checkBonification(emp1);
 		checkBonification(emp2);
