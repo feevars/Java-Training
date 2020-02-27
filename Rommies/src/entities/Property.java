@@ -12,7 +12,7 @@ public class Property {
 	private Adress adress;
 	private PropertyOwner propertyOwner;
 	private ArrayList<Rommie> rommie;
-	private List<Room> rooms;
+	private ArrayList<Room> rooms;
 	
 	public Property() {
 		
@@ -78,7 +78,7 @@ public class Property {
 		return rooms;
 	}
 
-	public void setRooms(List<Room> rooms) {
+	public void setRooms(ArrayList<Room> rooms) {
 		this.rooms = rooms;
 	}
 

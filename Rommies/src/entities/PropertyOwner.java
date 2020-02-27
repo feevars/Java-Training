@@ -13,9 +13,11 @@ public class PropertyOwner implements Serializable {
 		private String telephone;
 		private String email;
 		private Date birthDate;
+		
 		private ArrayList<Property> properties;
 		
 		public PropertyOwner() {
+			properties = new ArrayList<Property>();
 		}
 		
 		public PropertyOwner(Integer id, String name, String telephone, String email, Date birthDate) {
@@ -25,6 +27,8 @@ public class PropertyOwner implements Serializable {
 			this.telephone = telephone;
 			this.email = email;
 			this.birthDate = birthDate;
+			
+			properties = new ArrayList<Property>();
 		}
 
 		public Integer getId() {
