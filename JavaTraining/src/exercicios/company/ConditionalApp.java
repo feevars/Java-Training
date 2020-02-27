@@ -1,6 +1,7 @@
 package exercicios.company;
 
 import exercicios.company.entities.Employee;
+import exercicios.company.entities.LevelEnum;
 import exercicios.company.entities.Programmer;
 import exercicios.company.entities.Tester;
 
@@ -12,6 +13,19 @@ public class ConditionalApp {
 		
 		checkBonification(emp1);
 		checkBonification(emp2);
+		
+		emp1.setYearsWorking(4);
+		emp2.setYearsWorking(8);
+		
+		defineLevel(emp1);
+		defineLevel(emp2);
+		
+		emp1.calcular();
+		emp2.calcular();
+		
+		System.out.println(emp1.getNome().concat(" --- ") + emp1.getSalario().toString());
+		System.out.println(emp2.getNome().concat(" --- ") + emp2.getSalario().toString());
+		
 	}
 
 	private static void checkBonification(Employee emp) {
@@ -23,4 +37,19 @@ public class ConditionalApp {
 		}
 		System.out.println(emp.getNome().toString() + " -- " + emp.getBonification().toString());
 	}
+	
+	private static void defineLevel(Employee emp) {
+
+		if (emp.getYearsWorking() > 6) {
+			emp.setLevel(LevelEnum.SENIOR);
+		} else if(emp.getYearsWorking() > 3) {
+			emp.setLevel(LevelEnum.PLENO);
+		} else {
+			emp.setLevel(LevelEnum.JUNIOR);
+		}
+		
+		System.out.println(emp.getNome().toString().concat(" -- ") + emp.getLevel().toString().concat(" -- ")
+				+emp.trabalhar().toString());
+	}
+	
 }

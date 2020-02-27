@@ -1,6 +1,8 @@
 package exercicios.company.entities;
 
-public abstract class Employee {
+import exercicios.company.CalculaSalario;
+
+public abstract class Employee implements CalculaSalario {
 	
 	private String nome;
 	private Character sexo;
@@ -24,6 +26,15 @@ public abstract class Employee {
 		this.age = age;
 	}
 	
+	public Employee(String nome, Character sexo, String email, Integer age, Double salario, Double bonification) {
+		this.nome = nome;
+		this.sexo = sexo;
+		this.email = email;
+		this.age = age;
+		this.salario = salario;
+		this.bonification = bonification;
+	}
+
 	public Employee(String nome, Character sexo, String email, Integer age, Double salario, Double bonification,
 			Integer yearsWorking) {
 		this.nome = nome;
@@ -100,4 +111,11 @@ public abstract class Employee {
 	}
 	
 	public abstract String trabalhar();
+	
+	public Double calcular() {
+		if (getLevel().equals(LevelEnum.JUNIOR)) this.salario = 3000.00;
+		if (getLevel().equals(LevelEnum.PLENO)) this.salario = 5000.00;
+		if (getLevel().equals(LevelEnum.SENIOR)) this.salario = 8000.00;
+		return getSalario() + getBonification();
+	}
 }

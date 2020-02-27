@@ -19,6 +19,10 @@ public class Programmer extends Employee {
 		this.setLinguagem(linguagem);
 	}
 
+	public Programmer(String nome, Character sexo, String email, Integer age, Double salario, Double bonification) {
+		super(nome, sexo, email, age, salario, bonification);
+	}
+
 	public String getLinguagem() {
 		return linguagem;
 	}
