@@ -3,6 +3,7 @@ package exercicios.company.entities;
 public class Programmer extends Employee {
 
 	private String linguagem;
+	private Integer horasProgramando;
 
 	public Programmer(String nome, Character sexo, String email) {
 		super(nome, sexo, email);
@@ -25,5 +26,19 @@ public class Programmer extends Employee {
 	public void setLinguagem(String linguagem) {
 		this.linguagem = linguagem;
 	}
+	
+	public Integer getHorasProgramando() {
+		return horasProgramando;
+	}
+
+	public void setHorasProgramando(Integer horasProgramando) {
+		this.horasProgramando = horasProgramando;
+	}
+
+	public Integer trabalhar() {
+		setHorasProgramando(60);
+		return null;
+	}
+
 
 }

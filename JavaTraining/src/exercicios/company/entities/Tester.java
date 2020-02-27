@@ -3,6 +3,7 @@ package exercicios.company.entities;
 public class Tester extends Employee {
 
 	private String tool;
+	private Integer HorasTestando;
 	
 	public Tester(String nome, Character sexo, String email, Integer age) {
 		super(nome, sexo, email, age);
@@ -25,4 +26,19 @@ public class Tester extends Employee {
 	public void setTool(String tool) {
 		this.tool = tool;
 	}
+
+	public Integer getHorasTestando() {
+		return HorasTestando;
+	}
+
+	public void setHorasTestando(Integer HorasTestando) {
+		this.HorasTestando = HorasTestando;
+	}
+
+	@Override
+	public Integer trabalhar() {
+		setHorasTestando(70);
+		return null;
+	}
+
 }
