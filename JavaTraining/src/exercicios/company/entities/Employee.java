@@ -1,4 +1,4 @@
-package exercicios.company;
+package exercicios.company.entities;
 
 public abstract class Employee {
 	
@@ -9,7 +9,7 @@ public abstract class Employee {
 	private Double salario;
 	private Double bonification;
 	private Integer yearsWorking;
-	private Enum<Level> level;
+	private Enum<LevelEnum> level;
 	
 	public Employee(String nome, Character sexo, String email) {
 		this.nome = nome;
@@ -91,11 +91,11 @@ public abstract class Employee {
 		this.yearsWorking = yearsWorking;
 	}
 
-	public Enum<Level> getLevel() {
+	public Enum<LevelEnum> getLevel() {
 		return level;
 	}
 
-	public void setLevel(Enum<Level> level) {
+	public void setLevel(Enum<LevelEnum> level) {
 		this.level = level;
 	}
 	

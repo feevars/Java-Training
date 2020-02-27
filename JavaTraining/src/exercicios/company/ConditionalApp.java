@@ -1,6 +1,10 @@
 package exercicios.company;
 
-public class Conditional {
+import exercicios.company.entities.Employee;
+import exercicios.company.entities.Programmer;
+import exercicios.company.entities.Tester;
+
+public class ConditionalApp {
 	public static void main(String[] args) {
 		
 		Employee emp1 = new Programmer("Roger", 'M', "roger@gmail.com", 24, "Java");

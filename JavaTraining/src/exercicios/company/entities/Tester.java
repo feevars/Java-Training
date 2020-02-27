@@ -1,4 +1,4 @@
-package exercicios.company;
+package exercicios.company.entities;
 
 public class Tester extends Employee {
 

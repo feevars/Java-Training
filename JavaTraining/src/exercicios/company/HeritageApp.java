@@ -1,6 +1,11 @@
 package exercicios.company;
 
-public class HeritageEnum {
+import exercicios.company.entities.Employee;
+import exercicios.company.entities.LevelEnum;
+import exercicios.company.entities.Programmer;
+import exercicios.company.entities.Tester;
+
+public class HeritageApp {
 	public static void main(String[] args) {
 		
 		Employee emp1 = new Programmer("Roger", 'M', "roger@gmail.com", 24, "Java");
@@ -18,11 +23,11 @@ public class HeritageEnum {
 	private static void defineLevel(Employee emp) {
 
 		if (emp.getYearsWorking() > 6) {
-			emp.setLevel(Level.SENIOR);
+			emp.setLevel(LevelEnum.SENIOR);
 		} else if(emp.getYearsWorking() > 3) {
-			emp.setLevel(Level.PLENO);
+			emp.setLevel(LevelEnum.PLENO);
 		} else {
-			emp.setLevel(Level.JUNIOR);
+			emp.setLevel(LevelEnum.JUNIOR);
 		}
 		
 		System.out.println(emp.getNome().toString() + " -- " + emp.getLevel().toString());

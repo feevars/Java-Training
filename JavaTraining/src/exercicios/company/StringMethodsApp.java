@@ -1,6 +1,10 @@
 package exercicios.company;
 
-public class StringMethods {
+import exercicios.company.entities.Employee;
+import exercicios.company.entities.Programmer;
+import exercicios.company.entities.Tester;
+
+public class StringMethodsApp {
 	public static void main(String[] args) {
 
 		Employee emp1 = new Programmer("Roger", 'M', "roger@gmail.com", "Java");
