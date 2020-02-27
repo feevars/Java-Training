@@ -44,5 +44,4 @@ public class Programmer extends Employee {
 		return getHorasProgramando().toString() +" horas";
 	}
 
-
 }

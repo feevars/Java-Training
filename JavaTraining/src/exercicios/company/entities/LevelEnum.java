@@ -5,6 +5,4 @@ public enum LevelEnum {
 	JUNIOR,
 	PLENO,
 	SENIOR;
-
-	
 }

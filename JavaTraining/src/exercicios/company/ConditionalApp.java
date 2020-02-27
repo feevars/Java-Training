@@ -20,8 +20,8 @@ public class ConditionalApp {
 		defineLevel(emp1);
 		defineLevel(emp2);
 		
-		emp1.calcular();
-		emp2.calcular();
+		emp1.calcularSalario();
+		emp2.calcularSalario();
 		
 		System.out.println(emp1.getNome().concat(" --- ") + emp1.getSalario().toString());
 		System.out.println(emp2.getNome().concat(" --- ") + emp2.getSalario().toString());
