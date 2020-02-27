@@ -116,6 +116,7 @@ public abstract class Employee implements CalculaSalario {
 		if (getLevel().equals(LevelEnum.JUNIOR)) this.salario = 3000.00;
 		if (getLevel().equals(LevelEnum.PLENO)) this.salario = 5000.00;
 		if (getLevel().equals(LevelEnum.SENIOR)) this.salario = 8000.00;
-		return getSalario() + getBonification();
+		this.salario += this.bonification;
+		return getSalario();
 	}
 }
