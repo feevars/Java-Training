@@ -5,16 +5,20 @@ public class Employee {
 	private String nome;
 	private Character sexo;
 	private String email;
-	
-	public Employee( ) {
-		
-	}
+	private Integer age;
+	private Double bonification;
 	
 	public Employee(String nome, Character sexo, String email) {
-		super();
 		this.nome = nome;
 		this.sexo = sexo;
 		this.email = email;
+	}
+	
+	public Employee(String nome, Character sexo, String email, Integer age) {
+		this.nome = nome;
+		this.sexo = sexo;
+		this.email = email;
+		this.age = age;
 	}
 
 	public String getNome() {
@@ -39,6 +43,22 @@ public class Employee {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public Integer getAge() {
+		return age;
+	}
+
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+
+	public Double getBonification() {
+		return bonification;
+	}
+
+	public void setBonification(Double bonification) {
+		this.bonification = bonification;
 	}
 	
 	
