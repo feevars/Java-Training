@@ -36,9 +36,9 @@ public class Tester extends Employee {
 	}
 
 	@Override
-	public Integer trabalhar() {
+	public String trabalhar() {
 		setHorasTestando(70);
-		return null;
+		return getHorasTestando().toString()+" horas";
 	}
 
 }

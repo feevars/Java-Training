@@ -99,5 +99,5 @@ public abstract class Employee {
 		this.level = level;
 	}
 	
-	public abstract Integer trabalhar();
+	public abstract String trabalhar();
 }

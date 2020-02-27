@@ -30,6 +30,7 @@ public class HeritageApp {
 			emp.setLevel(LevelEnum.JUNIOR);
 		}
 		
-		System.out.println(emp.getNome().toString() + " -- " + emp.getLevel().toString());
+		System.out.println(emp.getNome().toString() + " -- " + emp.getLevel().toString()
+				+ "-- " +emp.trabalhar().toString());
 	}
 }

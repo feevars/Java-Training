@@ -35,9 +35,9 @@ public class Programmer extends Employee {
 		this.horasProgramando = horasProgramando;
 	}
 
-	public Integer trabalhar() {
+	public String trabalhar() {
 		setHorasProgramando(60);
-		return null;
+		return getHorasProgramando().toString() +" horas";
 	}
 
 
