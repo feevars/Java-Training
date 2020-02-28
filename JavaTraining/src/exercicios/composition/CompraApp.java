@@ -9,9 +9,11 @@ public class CompraApp {
 	
 	public static void main(String[] args) {
 		
-		Compra c1 = new Compra();
+
 		
 		Cliente cliente = new Cliente("Maria Julia Moraes");
+		
+		Compra c1 = new Compra();
 		
 		
 	

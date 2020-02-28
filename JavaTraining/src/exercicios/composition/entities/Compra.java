@@ -11,6 +11,7 @@ public class Compra {
 	
 	void adicionarItem(Produto p, Integer quantidade) {
 		this.itens.add(new Item(p, quantidade));
+		this.itens.add(new Item(p, quantidade));
 	}
 	
 	void adicionarItem(String nome, Double preco, Integer quantidade) {
@@ -22,9 +23,8 @@ public class Compra {
 		Double total = 0.00;
 		
 		for (Item item : itens) {
-			total += item.getQuantidade() * item.getProduto().getPreco();
+			total += item.quantidade * item.produto.preco;
 		}
-		
 		return total;
 	}
 }
