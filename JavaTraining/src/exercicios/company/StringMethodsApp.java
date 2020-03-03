@@ -25,4 +25,8 @@ public class StringMethodsApp {
 		s = s.concat("!");
 		System.out.println(s);
 	}
+	
+	public void teste(String nome) {
+		System.out.println("funcionou");
+	}
 }

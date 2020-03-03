@@ -17,7 +17,5 @@ public class HashMain {
 		
 		result = users.contains(new UserList("Kayla"));
 		System.out.println(result);
-
 	}
-
 }

@@ -15,13 +15,11 @@ public class QueueMain {
 		fila.offer("Jorge");
 		fila.offer("Cristina");
 		
-		
 		System.out.println(fila.peek()); // null if fila is empty
 		System.out.println(fila.element()); // throw noSuchElementException
 		
 		fila.poll(); // remove primeiro elemento da fila
 		fila.remove();
 		//if fila is empty, fila.remove() throws an exception. fila.poll() return null
-		
 	}
 }

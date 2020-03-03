@@ -31,11 +31,9 @@ public class UnnorganizedSet {
 		nums.add(1);
 		nums.add(2);
 		nums.add(3);
-	
 		
 		//intersecção
 		System.out.println(conjunto.retainAll(nums));
-		
 		System.out.println(conjunto);
 	}
 }

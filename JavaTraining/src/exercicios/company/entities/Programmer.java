@@ -4,6 +4,10 @@ public class Programmer extends Employee {
 
 	private String linguagem;
 	private Integer horasProgramando;
+	
+	public Programmer() {
+		super();
+	}
 
 	public Programmer(String nome, Character sexo, String email) {
 		super(nome, sexo, email);
@@ -40,8 +44,16 @@ public class Programmer extends Employee {
 	}
 
 	public String trabalhar() {
+		System.out.println("testando");
 		setHorasProgramando(60);
 		return getHorasProgramando().toString() +" horas";
+	}
+	
+	public static boolean isAdult(int age)
+	{
+		System.out.println("entrou");
+		
+		return true;
 	}
 
 }

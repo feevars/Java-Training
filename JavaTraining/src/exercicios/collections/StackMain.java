@@ -24,6 +24,5 @@ public class StackMain {
 		for(String book: books) {
 			System.out.println(book);
 		}
-		
 	}
 }

@@ -1,7 +1,13 @@
 package exercicios;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import exercicios.company.StringMethodsApp;
+import exercicios.company.entities.Department;
+import exercicios.company.entities.Employee;
+import exercicios.company.entities.Programmer;
 
 public class Foreach {
 
@@ -25,6 +31,19 @@ public class Foreach {
 		
 		System.out.println("\nReferência de método 2: ");
 		alunos.forEach(Foreach::printWelcome);
+		
+		Programmer programmer = new Programmer();
+		programmer.setAge(20);
+		ArrayList<Programmer> list = new ArrayList();
+		list.add(programmer);
+		
+		
+		System.out.println("\nReferência de método 2: ");
+		list.forEach(p -> System.out.println(p.getAge()));
+		list.forEach(Programmer::trabalhar);
+		
+		list.stream().map(p->p.getAge()).anyMatch(Programmer::isAdult);
+		
 	}
 	
 	static void printWelcome(String nome) {

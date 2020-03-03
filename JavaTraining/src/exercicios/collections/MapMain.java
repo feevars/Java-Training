@@ -15,7 +15,7 @@ public class MapMain {
 		users.put(3, "Cláudia");
 		users.put(4, "Vanessa");
 		users.put(5, "Josy");
-
+		
 		System.out.println(users.size());
 		System.out.println(users.isEmpty());
 		System.out.println(users.keySet());
@@ -38,5 +38,4 @@ public class MapMain {
 			System.out.println(registro.getValue());
 		}
 	}
-
 }
