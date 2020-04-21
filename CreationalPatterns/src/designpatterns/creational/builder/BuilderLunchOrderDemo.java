@@ -1,0 +1,16 @@
+package designpatterns.creational.builder;
+
+public class BuilderLunchOrderDemo {
+	public static void main(String[] args) {
+		LunchOrder.Builder builder = new LunchOrder.Builder();
+		
+		builder.bread("Wheat").condiments("Lettuce").dressing("Mayo").burger("Lentilha");
+		
+		LunchOrder lunchOrder = builder.build();
+		
+		System.out.println(lunchOrder.getBread());
+		System.out.println(lunchOrder.getCondiments());
+		System.out.println(lunchOrder.getDressing());
+		System.out.println(lunchOrder.getBurger());
+	}
+}
