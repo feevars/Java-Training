@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="CreationalPatterns/src"/>
+	<classpathentry kind="src" path="demo/.mvn/wrapper"/>
+	<classpathentry kind="src" path="demo/src/main/java"/>
+	<classpathentry kind="src" path="demo/src/test/java"/>
+	<classpathentry kind="src" path="Exceptions-Generics/src"/>
+	<classpathentry kind="src" path="JavaTraining/src"/>
+	<classpathentry kind="src" path="mockito-course/src/main/java"/>
+	<classpathentry kind="src" path="mockito-course/src/test/java"/>
+	<classpathentry kind="src" path="Rommies/src"/>
+	<classpathentry kind="src" path="SpringBootApp/cursowebservices/.mvn/wrapper"/>
+	<classpathentry kind="src" path="SpringBootApp/cursowebservices/src/main/java"/>
+	<classpathentry kind="src" path="SpringBootApp/cursowebservices/src/test/java"/>
+	<classpathentry kind="src" path="TestesUnitarios/src/main/java"/>
+	<classpathentry kind="src" path="TestesUnitarios/src/test/java"/>
+	<classpathentry kind="lib" path="TestesUnitarios/libs/builderMaster.jar"/>
+	<classpathentry kind="output" path="CreationalPatterns/bin"/>
+</classpath>

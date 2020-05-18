@@ -1,2 +1,13 @@
-/designpatterns/
+/.DS_Store
 /DesignPatternsInJava
+/br/
+/com/
+/designpatterns/
+/entities/
+/exceptions/
+/exercicios/
+/generics/
+/maven-wrapper.jar
+/maven-wrapper.properties
+/MavenWrapperDownloader$1.class
+/MavenWrapperDownloader.class
