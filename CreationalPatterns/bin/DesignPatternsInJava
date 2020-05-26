@@ -1,0 +1,45 @@
+Pattern Groups - Creational, Structural, Behavioral
+
+
+
+Creational
+****************
+
+Singleton 
+----------------
+- Cria um ciclo de vida
+- É estático
+- Não pode ser utilizado em diferentes threads (por isso não é seguro para ser utilizado como classe estática)
+- Garante apenas UMA instância
+- Fácil implementação. Tomar cuidado para não abusar dessa implementação.
+- Não utiliza interfaces
+- Precisa ser acessada a partir do construtor. Possui um construtor sem argumentos apenas.
+- Retorna a mesma instância
+
+Builder
+----------------
+- Imutável, torna classe estática
+- Possui construtores complexos, com um grande número de parâmetros imutáveis. Ex: StringBuilder, DocumentBuilder, 
+Locale.Builder
+
+Prototype
+----------------
+- clone()
+
+Factory
+----------------
+- Não expõe a lógica na instanciação
+- Diferem da subclasse
+- Possui uma interface comum (de validação, por exemplo)
+- É especificada na arquitetura e implementada pelo usuário
+- Responsável pelo ciclo de vida, pelas interfaces comuns e pelas classes concretas
+  Exemplos: calendar, resourcebundle, numberformat
+
+AbstractFactory
+----------------
+
+****************
+Structural
+****************
+Permite identificar a maneira correta de usar os objetos. ex: performance, refactoring 
+

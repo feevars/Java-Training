@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="DictionaryDemo/src"/>
+	<classpathentry kind="src" path="DictionaryServiceProvider/src"/>
+	<classpathentry kind="src" path="ExtendedDictionary/src"/>
+	<classpathentry kind="src" path="GeneralDictionary/src"/>
+	<classpathentry kind="lib" path="DictionaryDemo/dist/DictionaryDemo.jar"/>
+	<classpathentry kind="lib" path="DictionaryServiceProvider/dist/DictionaryServiceProvider.jar"/>
+	<classpathentry kind="lib" path="ExtendedDictionary/dist/ExtendedDictionary.jar"/>
+	<classpathentry kind="lib" path="GeneralDictionary/dist/GeneralDictionary.jar"/>
+	<classpathentry kind="output" path="DictionaryDemo/build"/>
+</classpath>

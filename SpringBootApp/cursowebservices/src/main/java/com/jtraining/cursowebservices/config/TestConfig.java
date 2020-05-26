@@ -10,10 +10,12 @@ import org.springframework.context.annotation.Profile;
 
 import com.jtraining.cursowebservices.entities.Category;
 import com.jtraining.cursowebservices.entities.Order;
+import com.jtraining.cursowebservices.entities.OrderItem;
 import com.jtraining.cursowebservices.entities.Product;
 import com.jtraining.cursowebservices.entities.User;
 import com.jtraining.cursowebservices.entities.enums.OrderStatus;
 import com.jtraining.cursowebservices.repositories.CategoryRepository;
+import com.jtraining.cursowebservices.repositories.OrderItemRepository;
 import com.jtraining.cursowebservices.repositories.OrderRepository;
 import com.jtraining.cursowebservices.repositories.ProductRepository;
 import com.jtraining.cursowebservices.repositories.UserRepository;
@@ -33,6 +35,9 @@ public class TestConfig implements CommandLineRunner {
 	
 	@Autowired
 	private ProductRepository productRepository;
+	
+	@Autowired
+	private OrderItemRepository orderItemRepository;
 
 	@Override
 	public void run(String... args) throws Exception {
@@ -70,6 +75,12 @@ public class TestConfig implements CommandLineRunner {
 		userRepository.saveAll(Arrays.asList(u1, u2));
 		orderRepository.saveAll(Arrays.asList(o1, o2, o3));
 		
+		OrderItem oi1 = new OrderItem(o1, p2_pccarroca, 3, p2_pccarroca.getPrice());
+		OrderItem oi2 = new OrderItem(o1, p3_notebookgamer, 1, p3_notebookgamer.getPrice());
+		OrderItem oi3 = new OrderItem(o2, p1_gatomiu, 5, p1_gatomiu.getPrice());
+		OrderItem oi4 = new OrderItem(o3, p4_celulartijolao, 2, p4_celulartijolao.getPrice());
+		
+		orderItemRepository.saveAll(Arrays.asList(oi1, oi2, oi3, oi4));
 	}
 	
 }
