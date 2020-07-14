@@ -41,4 +41,10 @@ public class Tester extends Employee {
 		return getHorasTestando().toString()+" horas";
 	}
 
+	@Override
+	public void fazerHorasExtra() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

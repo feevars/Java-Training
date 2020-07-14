@@ -1,0 +1,13 @@
+/home/fernanda/BRAIN WORKOUT/Java-Training/TestesUnitarios/src/test/java/br/ce/wcaquino/builders/UsuarioBuilder.java
+/home/fernanda/BRAIN WORKOUT/Java-Training/TestesUnitarios/src/test/java/br/ce/wcaquino/matchers/DataDiferencaDiasMatcher.java
+/home/fernanda/BRAIN WORKOUT/Java-Training/TestesUnitarios/src/test/java/br/ce/wcaquino/suites/SuiteExecucao.java
+/home/fernanda/BRAIN WORKOUT/Java-Training/TestesUnitarios/src/test/java/br/ce/wcaquino/builders/LocacaoBuilder.java
+/home/fernanda/BRAIN WORKOUT/Java-Training/TestesUnitarios/src/test/java/br/ce/wcaquino/matchers/MatchersProprios.java
+/home/fernanda/BRAIN WORKOUT/Java-Training/TestesUnitarios/src/test/java/br/ce/wcaquino/matchers/DiaSemanaMatcher.java
+/home/fernanda/BRAIN WORKOUT/Java-Training/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/CalculadoraMockTest.java
+/home/fernanda/BRAIN WORKOUT/Java-Training/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java
+/home/fernanda/BRAIN WORKOUT/Java-Training/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/OrdemTest.java
+/home/fernanda/BRAIN WORKOUT/Java-Training/TestesUnitarios/src/test/java/br/ce/wcaquino/builders/FilmeBuilder.java
+/home/fernanda/BRAIN WORKOUT/Java-Training/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/CalculadoraTest.java
+/home/fernanda/BRAIN WORKOUT/Java-Training/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/AssertTest.java
+/home/fernanda/BRAIN WORKOUT/Java-Training/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/CalculoValorLocacaoTest.java

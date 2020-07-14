@@ -27,6 +27,10 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ErrorCollector;
 import org.junit.rules.ExpectedException;
+import org.junit.runner.RunWith;
+import org.powermock.api.mockito.PowerMockito;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
 
 import br.ce.wcaquino.builders.FilmeBuilder;
 import br.ce.wcaquino.builders.UsuarioBuilder;
@@ -42,6 +46,8 @@ import br.ce.wcaquino.matchers.MatchersProprios;
 import br.ce.wcaquino.utils.DataUtils;
 import buildermaster.BuilderMaster;
 
+@RunWith(PowerMockRunner.class)
+@PrepareForTest(LocacaoService.class)
 public class LocacaoServiceTest {
 	
 	private LocacaoService service;
@@ -76,21 +82,21 @@ public class LocacaoServiceTest {
 //	public static void AftClassSetup() {
 //		System.out.println("After class");
 //	}
-// variável estática mantém testes dependentes dos anteriores
+// variï¿½vel estï¿½tica mantï¿½m testes dependentes dos anteriores
 	
 	
 	@Test
 	public void deveAlugarFilme()  throws Exception {
 		Assume.assumeFalse(DataUtils.verificarDiaSemana(new Date(), Calendar.SATURDAY));
 		
-		//cenário
+		//cenï¿½rio
 		Usuario usuario = umUsuario().agora();
 		List<Filme> filmes = Arrays.asList(umFilme().comValor(5.0).agora());
 		
-		//ação
+		//aï¿½ï¿½o
 		Locacao locacao = service.alugarFilme(usuario, filmes);
 		
-		//verificação
+		//verificaï¿½ï¿½o
 		//System.out.println(locacao.getValor()== 5.0);
 					//Assert.assertEquals(4.0, locacao.getValor(), 0.01);
 					//assertThat(locacao.getValor(), is(equalTo(5.0)));
@@ -110,19 +116,19 @@ public class LocacaoServiceTest {
 	
 	
 	
-	//forma elegante - exceção é lançada apenas por esse motivo
+	//forma elegante - exceï¿½ï¿½o ï¿½ lanï¿½ada apenas por esse motivo
 	@Test(expected=FilmeSemEstoqueException.class)
 	public void naoDeveAlugarFilmesSemEstoque() throws Exception {
-		//cenário
+		//cenï¿½rio
 				Usuario usuario = new Usuario("User 1");
 				List<Filme> filmes = Arrays.asList(umFilmeSemEstoque().agora());
 				
-		//ação
+		//aï¿½ï¿½o
 				service.alugarFilme(usuario, filmes);
 	}
 	
 	
-	//forma robusta - mais poder sobre a execução, segura a exceção e o fluxo continua - melhor entre as 3
+	//forma robusta - mais poder sobre a execuï¿½ï¿½o, segura a exceï¿½ï¿½o e o fluxo continua - melhor entre as 3
 	@Test
 	public void naoDeveAlugarFilmesSemUsuario() throws FilmeSemEstoqueException {
 		//cenario
@@ -139,10 +145,10 @@ public class LocacaoServiceTest {
 	
 	
 	
-	//forma nova - nao faz nada depois da exceção
+	//forma nova - nao faz nada depois da exceï¿½ï¿½o
 	@Test
 	public void naoDeveAlugarFilmesSemFilme() throws FilmeSemEstoqueException, LocadoraException {
-		//cenário
+		//cenï¿½rio
 		Usuario usuario = new Usuario("User 1");
 		
 		
@@ -157,15 +163,15 @@ public class LocacaoServiceTest {
 	
 //	@Test
 //	public void testLocacao_filmesSemEstoque2() {
-//		//cenário
+//		//cenï¿½rio
 //				LocacaoService service = new LocacaoService();
 //				Usuario usuario = new Usuario("User 1");
 //				Filme filme = new Filme("Gato Miu", 0, 5.0);
 //				
-//		//ação
+//		//aï¿½ï¿½o
 //				try {
 //					service.alugarFilme(usuario, filme);
-//					//Assert.fail("Deveria ter lançado uma exceção");
+//					//Assert.fail("Deveria ter lanï¿½ado uma exceï¿½ï¿½o");
 //				} catch (Exception e) {
 //					assertThat(e.getMessage(), is("Filme sem estoque"));
 //				}
@@ -173,25 +179,27 @@ public class LocacaoServiceTest {
 	
 //	@Test
 //	public void testLocacao_filmesSemEstoque3() throws Exception {
-//		//cenário
+//		//cenï¿½rio
 //				LocacaoService service = new LocacaoService();
 //				Usuario usuario = new Usuario("User 1");
 //				Filme filme = new Filme("Gato Miu", 0, 5.0);
 //				
 //				exception.expect(FilmeSemEstoqueException.class);
 //				
-//		//ação
+//		//aï¿½ï¿½o
 //				service.alugarFilme(usuario, filme);
 //	}
 	
 	@Test
-	public void deveDevolverNaSegundaAoAlugarNoSabado() throws FilmeSemEstoqueException, LocadoraException {
-		Assume.assumeTrue(DataUtils.verificarDiaSemana(new Date(), Calendar.SATURDAY));
+	public void deveDevolverNaSegundaAoAlugarNoSabado() throws Exception {
+//		Assume.assumeTrue(DataUtils.verificarDiaSemana(new Date(), Calendar.SATURDAY));
+		
 		
 		//cenario
 		Usuario usuario = new Usuario("User1");
 		List<Filme> filmes = Arrays.asList(umFilme().agora());
 		
+		PowerMockito.whenNew(Date.class).withNoArguments().thenReturn(DataUtils.obterData(07, 06, 2020));	
 		//acao
 		Locacao retorno = service.alugarFilme(usuario, filmes);
 		

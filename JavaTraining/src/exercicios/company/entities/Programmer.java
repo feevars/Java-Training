@@ -56,4 +56,10 @@ public class Programmer extends Employee {
 		return true;
 	}
 
+	@Override
+	public void fazerHorasExtra() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
